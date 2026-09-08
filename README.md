@@ -22,6 +22,10 @@ how async functions work.
 - dayjs (for timestamps)
 - supersimpledev (chatbot response simulation)
 
+## Live Demo
+
+https://bhumikacodess.github.io/ChatBot/
+
 ## Running locally
 \`\`\`bash
 npm install
