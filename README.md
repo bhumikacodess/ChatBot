@@ -1,12 +1,29 @@
-# React + Vite
+# Chatbot Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple chatbot built with React. It can only answer a small set of pre-programmed
+questions, using the `supersimpledev` Chatbot API to simulate responses — it's not
+connected to a real AI model.
 
-Currently, two official plugins are available:
+I built this while following supersimpledev's React course. Through this project
+I learned the fundamentals of React, including useState, useRef, useEffect, and
+how async functions work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Send messages and get a response from the chatbot
+- Custom responses added on top of the default set (e.g. "goodbye")
+- Chat history persisted with localStorage — messages survive a page refresh
+- Loading indicator while waiting for a response
+- Clear chat history
+- Timestamps on messages
 
-## Expanding the ESLint configuration
+## Tech stack
+- React
+- Vite
+- dayjs (for timestamps)
+- supersimpledev (chatbot response simulation)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Running locally
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
